@@ -17,8 +17,6 @@ cd backend
 pip install -r requirements.txt
 ```
 
-## Plug in your real model
-
 `train_dummy_model.py` creates a **placeholder** model so the whole pipeline
 runs end-to-end out of the box. Replace it with your own:
 
