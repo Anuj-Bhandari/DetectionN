@@ -27,7 +27,7 @@ SERVICE_MAP = {
 
 
 def _run_tshark(pcap_path: str) -> pd.DataFrame:
-    cmd = ["tshark", "-r", pcap_path, "-T", "fields", "-E", "header=y",
+    cmd = [r"C:\Program Files\Wireshark\tshark.exe", "-r", pcap_path, "-T", "fields", "-E", "header=y",
            "-E", "separator=,", "-E", "quote=d", "-E", "occurrence=f"]
     for f in FIELDS:
         cmd += ["-e", f]
